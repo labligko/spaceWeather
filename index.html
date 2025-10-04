@@ -1,56 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Weather | Beranda</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header>
-        <h1>Space Weather</h1>
+        <h1>SPACE WEATHER</h1>
     </header>
 
     <!-- Sesi 1: Overview -->
-    <section id="sesi1" class="section">
-        <h2>Overview</h2>
-        <p>
-            Space weather is a term used to describe the conditions and 
-            physical phenomena in outer space that are influenced by space activity and have an impact on the environment surrounding Earth.
-        </p>
+    <section id="sesi1" class="section active">
+        <div class="content1">
+            <h2 class="fade-in">The Unseen Watcher</h2>
+
+            <p class="fade-in delay-1">
+                An invisible phenomenon from outer space can have a profound impact on modern life on Earth.
+                When the Sun releases bursts of energy in the form of geomagnetic storms, high-energy particles can
+                strike Earth’s magnetic field.
+            </p>
+            <p class="fade-in delay-2">
+                These interactions trigger mesmerizing auroras in polar skies — a beautiful yet dangerous side effect.
+                But the impact goes beyond the skies: satellites can malfunction, GPS signals may be disrupted, and
+                power grids face serious risks.
+            </p>
+            <p class="fade-in delay-3">
+                How can something we can’t see affect human life?
+            </p>
+
+            <h4 class="fade-in delay-4" id="scroll-down"><i class="bi bi-arrow-down"></i> Let’s find out <i
+                    class="bi bi-arrow-down"></i></h4>
+        </div>
     </section>
-    
+
+
     <!-- Sesi 2: Galeri Slide -->
     <section id="sesi2" class="section">
-        <h2>Fenomena Luar Angkasa</h2>
-        <div class="slider">
-            <div class="slide active">Aurora Borealis yang memukau</div>
-            <div class="slide">Badai Matahari dengan energi besar</div>
-            <div class="slide">Medan Magnet Bumi yang melindungi kita</div>
-            <div class="slider-controls">
-                <button id="prev">⟨</button>
-                <button id="next">⟩</button>
+        <div class="content2">
+            <h2>Space Exploration</h2>
+            <div class="slider">
+
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <div class="slide-content">
+                        <div class="text">
+                            <h3>Aurora Borealis</h3>
+                            <p>Auroras are captivating natural light displays that appear in the polar night skies,
+                                resembling colorful curtains in hues of green, red, purple, and blue. They occur when
+                                charged
+                                particles from the Sun—released during solar flares or coronal mass ejections—collide
+                                with
+                                Earth’s magnetic field and atmospheric gases like oxygen and nitrogen. These
+                                interactions,
+                                happening in the ionosphere and magnetosphere, produce glowing emissions and serve as
+                                indicators of space weather activity. Aurora borealis appears in the northern
+                                hemisphere, while
+                                aurora australis occurs in the southern, typically during clear nights with heightened
+                                solar
+                                activity.
+                                Beyond their visual splendor, auroras have significant technical and cultural
+                                implications.
+                                Geomagnetic disturbances linked to auroras can disrupt radio communications, GPS
+                                systems,
+                                satellites, and even power grids—posing risks to modern infrastructure and polar flight
+                                routes.
+                                Culturally, auroras are woven into the folklore of Indigenous communities, often seen as
+                                spiritual
+                                signs. Scientifically, they offer valuable insights into Earth’s magnetic field and
+                                atmospheric
+                                dynamics, making them essential subjects in space weather research and observation.
+                            </p>
+                        </div>
+                        <div class="viewer">
+                            <div id="glb-container"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="text">
+                            <h3>Meteor Shower</h3>
+                            <p>Meteor showers are dazzling celestial events where numerous meteors streak across the
+                                night
+                                sky, often appearing as “shooting stars.” These meteors are fragments from comets or
+                                asteroids
+                                that ignite upon entering Earth’s atmosphere. Meteor showers occur when Earth passes
+                                through
+                                debris trails left by these celestial bodies, with famous showers like the Perseids,
+                                Leonids, and
+                                Geminids recurring annually. While most meteors burn up harmlessly, rare larger ones may
+                                survive and land as meteorites, occasionally causing localized damage.
+                                Beyond their visual spectacle, meteor showers carry scientific and cultural
+                                significance.
+                                Researchers study them to uncover insights into the composition of space debris and the
+                                evolution of our solar system. Culturally, meteors are often linked to myths and
+                                spiritual beliefs
+                                across societies. Today, meteor showers also play a role in astronomy tourism and
+                                education,
+                                fostering a deeper appreciation for the universe and our place within it.
+                            </p>
+                        </div>
+                        <div class="viewer">
+                            <div id="glb-container2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="text">
+                            <div class="text-page active">
+                                <h3>Coronal Mass Ejection - Page 1</h3>
+                                <p>Coronal Mass Ejections (CMEs) are powerful eruptions of solar plasma and magnetic
+                                    fields from
+                                    the Sun’s corona, capable of releasing billions of tons of charged particles into
+                                    space at high
+                                    speeds. These events often accompany solar flares but can occur independently,
+                                    especially
+                                    during periods of intense solar activity. CMEs result from the buildup and sudden
+                                    release of
+                                    magnetic energy in the Sun’s atmosphere, where twisted magnetic field lines become
+                                    unstable
+                                    and eject solar material outward. When directed toward Earth, CMEs can reach the
+                                    planet
+                                    within one to three days and significantly affect space weather.
+                                    Upon arrival, CMEs can trigger geomagnetic storms that disturb Earth’s
+                                    magnetosphere,
+                                    producing auroras and disrupting satellite operations, GPS, and radio
+                                    communications. They
+                                    also pose risks to astronauts and high-altitude flights, and in severe cases, can
+                                    induce electric
+                                    currents in power grids, leading to equipment damage or outages. Beyond these
+                                    technological
+                                    impacts, CMEs are vital to understanding solar dynamics and planetary interactions.
+                                    Continuous
+                                    monitoring and research are essential for developing early warning systems and
+                                    safeguarding
+                                    space-based infrastructure, especially as human dependence on space technology
+                                    continues to
+                                    grow.</p>
+                            </div>
+                            <div class="text-page">
+                                <h3>Solar Radiation - Page 2</h3>
+                                <p>Solar radiation is the electromagnetic energy emitted by the Sun, reaching Earth as
+                                    light and
+                                    heat across various wavelengths, including visible light, ultraviolet (UV), and
+                                    infrared. It is vital
+                                    for life—driving photosynthesis, regulating climate, and enabling solar energy—but
+                                    excessive
+                                    exposure, especially to UV rays, can harm living organisms and disrupt technology.
+                                    This
+                                    radiation originates from nuclear fusion in the Sun’s core and varies with solar
+                                    activity like
+                                    sunspots, flares, and coronal mass ejections, which can temporarily intensify the
+                                    radiation
+                                    reaching Earth.
+                                    While solar radiation benefits ecosystems and supports renewable energy, it also
+                                    poses risks to
+                                    human health and technological systems. High UV levels can damage skin and increase
+                                    cancer
+                                    risk, while intense solar storms may interfere with satellites, GPS, and
+                                    communications. Its
+                                    broader impact spans climate regulation, infrastructure resilience, and space
+                                    exploration.
+                                    Protective measures and continuous monitoring are essential to manage these effects,
+                                    making
+                                    solar radiation a key factor in balancing environmental sustainability and
+                                    technological
+                                    advancement.</p>
+                            </div>
+                            <div class="text-page">
+                                <h3>Solar Flares - Page 3</h3>
+                                <p>Solar flares are powerful bursts of electromagnetic radiation from the Sun’s surface,
+                                    often
+                                    occurring near sunspots due to magnetic reconnection. These eruptions release energy
+                                    across
+                                    the spectrum, including X-rays and ultraviolet light, and can last from minutes to
+                                    hours. Solar
+                                    flares are closely tied to the Sun’s magnetic activity and tend to peak during the
+                                    11-year solar
+                                    cycle. They may occur alongside coronal mass ejections (CMEs) or independently, and
+                                    are a
+                                    major driver of space weather, capable of affecting regions far beyond the Sun.
+                                    When directed toward Earth, solar flares can disrupt the ionosphere, interfering
+                                    with radio
+                                    communications, GPS systems, and satellite operations. They pose radiation risks to
+                                    astronauts
+                                    and high-altitude flights, especially near polar routes, and may trigger geomagnetic
+                                    storms when
+                                    accompanied by CMEs. These impacts extend to aviation, space exploration, and
+                                    infrastructure
+                                    resilience, making solar flare monitoring essential for early warning systems.
+                                    Understanding
+                                    solar flares is key to protecting technology and preparing for the challenges posed
+                                    by our active
+                                    Sun.</p>
+                            </div>
+
+                            <div class="text-controls">
+                                <button class="prev-text"><strong>Prev</strong></button>
+                                <button class="next-text"><strong>Next</strong></button>
+                            </div>
+                        </div>
+
+                        <div class="viewer">
+                            <div id="glb-container3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="slider-controls">
+                    <button id="prev">⟨</button>
+                    <button id="next">⟩</button>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- Sesi 3: Penutup -->
     <section id="sesi3" class="section">
         <h2>Penutup</h2>
         <p>
-            Terima kasih telah mengunjungi Space Weather. 
+            Terima kasih telah mengunjungi Space Weather.
             Semoga informasi yang kami bagikan bermanfaat untuk memperluas wawasanmu tentang luar angkasa.
         </p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Space Weather. All rights reserved.</p>
-    </footer>
-
     <!-- Script JS -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>
