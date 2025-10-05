@@ -15,6 +15,7 @@ Proyek ini dibuat oleh tim **"SyNtAx ErRoR"** dalam kegiatan **2025 NASA Space A
 - ☀️ Realistic lighting and shadow effects  
 - 📱 Responsive layout for all devices  
 - 💫 Experimental asteroid object display
+<br>
 
 **ID:**
 - 🌍 Visualisasi Bumi 3D dengan rotasi dinamis  
@@ -30,6 +31,7 @@ Proyek ini dibuat oleh tim **"SyNtAx ErRoR"** dalam kegiatan **2025 NASA Space A
 - **CSS3**             – styling and layout  
 - **JavaScript (ES6)** – interactivity  
 - **Three.js**         – real-time 3D rendering
+<br>
 
 **ID:**
 - **HTML5**            – struktur dasar halaman  
@@ -48,6 +50,7 @@ Proyek ini dibuat oleh tim **"SyNtAx ErRoR"** dalam kegiatan **2025 NASA Space A
    cd spaceWeather
 3. Open `index.html` in your browser.  
    ⚠️ **Note:** For best visual experience, set browser zoom to **67%**.
+<br>
 
 **ID:**
 1. Clone repositori ini:
@@ -56,7 +59,7 @@ Proyek ini dibuat oleh tim **"SyNtAx ErRoR"** dalam kegiatan **2025 NASA Space A
 2. Buka folder proyek:
    cd spaceWeather
 3. Jalankan file index.html di browser.
-   ⚠️ Catatan: Untuk tampilan demo/testing optimal, ubah zoom browser menjadi 67%.
+   ⚠️ **Catatan:** Untuk tampilan demo/testing optimal, ubah zoom browser menjadi 67%.
 
 ---
 
@@ -66,6 +69,7 @@ Thoriq           – Frontend Developer & Three.js Integration
 Rafie & Fatih    – 3D Design / Assets  
 Dhanan & Andam   – Documentation & Space Weather Data  
 Reza             – Backup Code / Repository Management
+<br>
 
 **ID:**
 Thoriq           – Frontend Developer & Integrasi Three.js
@@ -79,6 +83,7 @@ Reza             - Backup Code
 **EN:**
 View the online demo of this project via GitHub Pages:  
 👉 https://labligko.github.io/spaceWeather
+<br>
 
 **ID:**
 Lihat demo online proyek ini melalui GitHub Pages:
