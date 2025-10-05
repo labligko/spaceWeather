@@ -79,8 +79,8 @@ h1 {
     background: url("assets/space_bg.jpg");
 }
 
-#sesi3{
-    background: url("assets/bg3.jpg") no-repeat center/cover;;
+#sesi4{
+    background: url("assets/bg3.jpg") no-repeat center/cover;
 }
 
 .content2 h2{
@@ -185,6 +185,12 @@ h1 {
   height: 100%;
 }
 
+#glb-container2, #glb-container3, #glb-container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
 .slider-controls {
   position: absolute;
   top: 50%;
@@ -251,6 +257,18 @@ h1 {
     color: #f7b500;
 }
 
+.content4 p{
+  font-size: 1.7rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #e0e0e0; 
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -267,4 +285,86 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 40px 20px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.video-card:nth-child(1) { animation-delay: 0.1s; }
+.video-card:nth-child(2) { animation-delay: 0.2s; }
+.video-card:nth-child(3) { animation-delay: 0.3s; }
+.video-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.video-card h3 {
+    font-size: 1.5rem;
+    margin: 12px 16px 4px;
+    color: #333;
+}
+
+.video-card p {
+    font-size: 1.2rem;
+    margin: 0 16px 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.video-wrapper video {
+    position: static; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-wrapper:hover .play-button {
+    background-color: rgba(0, 0, 0, 0.7);
 }
