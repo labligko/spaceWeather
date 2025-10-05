@@ -58,7 +58,7 @@ Proyek ini dibuat oleh tim **"SyNtAx ErRoR"** dalam kegiatan **2025 NASA Space A
    git clone https://github.com/labligko/spaceWeather.git
 2. Buka folder proyek:
    cd spaceWeather
-3. Jalankan file index.html di browser.
+3. Jalankan file index.html di browser.  
    ⚠️ **Catatan:** Untuk tampilan demo/testing optimal, ubah zoom browser menjadi 67%.
 
 ---
@@ -72,10 +72,10 @@ Reza             – Backup Code / Repository Management
 <br>
 
 **ID:**
-Thoriq           – Frontend Developer & Integrasi Three.js
-Rafie dan Fatih  – 3D Design / Assets
-Dhanan dan Andam – Dokumentasi & Data Space Weather
-Reza             - Backup Code 
+Thoriq           – Frontend Developer & Integrasi Three.js  
+Rafie & Fatih    – 3D Design / Assets
+Dhanan & Andam   – Dokumentasi & Data Space Weather
+Reza             – Backup Code 
 
 ---
 
@@ -86,14 +86,16 @@ View the online demo of this project via GitHub Pages:
 <br>
 
 **ID:**
-Lihat demo online proyek ini melalui GitHub Pages:
+Lihat demo online proyek ini melalui GitHub Pages: 
 👉 https://labligko.github.io/spaceWeather
 
-<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/5d417310-d1fa-410c-ae5f-1f0449d2b702" />
-<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/f2b7dde7-c40a-4520-b71b-c44327eb2746" />
-<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/03303e83-3722-4d8f-a626-20f8d6c74bf1" />
-<img width="1919" height="901" alt="image" src="https://github.com/user-attachments/assets/b9db97ef-81f6-43d1-b14b-13f09d2d15fa" />
-<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/90160140-3f50-4d93-92ea-e43d953f5101" />
-<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/065d2806-95ce-4460-94f3-d49b2c856013" />
-<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/cd447768-5e61-42d6-85cd-e51f4a5a4c2d" />
-<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/26143496-a06b-4298-8438-687da955d8c1" />
+---
+
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/5d417310-d1fa-410c-ae5f-1f0449d2b702" /><br>
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/f2b7dde7-c40a-4520-b71b-c44327eb2746" /><br>
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/03303e83-3722-4d8f-a626-20f8d6c74bf1" /><br>
+<img width="1919" height="901" alt="image" src="https://github.com/user-attachments/assets/b9db97ef-81f6-43d1-b14b-13f09d2d15fa" /><br>
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/90160140-3f50-4d93-92ea-e43d953f5101" /><br>
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/065d2806-95ce-4460-94f3-d49b2c856013" /><br>
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/cd447768-5e61-42d6-85cd-e51f4a5a4c2d" /><br>
+<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/26143496-a06b-4298-8438-687da955d8c1" /><br>
